@@ -13,7 +13,7 @@ for (let i = 0; i < H; i++) {
   T.split('').forEach(letter => {
     // check if letter is present in list
     const letterIsValid = alpha.includes(letter.toUpperCase())
-    // by default we use the last character (?)
+    // by default use the last character (-> ?)
     let letterIndex = alpha.length
     // if letter is valid we assign the index
     if (letterIsValid) letterIndex = (letter.toLowerCase().charCodeAt() - 96)
